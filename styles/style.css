@@ -164,68 +164,108 @@ body {
 /* marque end */
 
 /* Curriculum section */
-.curriculum-section{
+.curriculum-section {
   margin: 70px 0;
-  background-image: url('../assets/bg.png');
+  background-image: url("../assets/bg.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.curriculum-container{
+.curriculum-container {
   display: flex;
   gap: 30px;
 }
-.curriculum-card{
+
+.curriculum-card {
   padding: 40px;
   border-radius: 18px;
   background-color: #fff;
   text-align: center;
+
+  background: linear-gradient(180deg, #def5ff, 10%, #ffffff);
 }
-.surriculum-title{
+.curriculum-container .curriculum-card:nth-child(2) {
+  background: linear-gradient(180deg, #fff4dc, 15%, #ffffff);
+}
+.curriculum-container .curriculum-card:nth-child(3) {
+  background: linear-gradient(180deg, #f2e8ff, 15%, #ffffff);
+}
+.surriculum-title {
   text-align: center;
   font-size: 2.8rem;
   margin-bottom: 50px;
 }
-
-
-/* story section */
-.story-section{
-    margin: 70px 0;
-    background-image: url('../assets/bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.curriculum-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 30px 0;
 }
-.story-title{
-    font-size: 2.8rem;
-    text-align: center;
-    margin-bottom: 50px;
+.curiculum-card-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #808080;
 }
-.story-card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px;
+.readmore-btn{
+  border: none;
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Quicksand", serif;
+  font-weight: 700;
 }
-.story-card{
-    background-color: #FFFFFF;
-    border-radius: 16px;
-}
-.story-card h3, p{
-    padding: 15px;
-}
-.card-img{
-    border-radius: 16px 16px 0 0;
-}
-#story-card1{
-    grid-row: span 2;
-}
-.story-viewall-btn{
+.arrow-btn{
   text-align: center;
   margin-top: 50px;
 }
-.story-viewall-btn button{
+.arrow-btn button{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fea301;
+  color: #FFFFFF;
+  border: none;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* story section */
+.story-section {
+  margin: 70px 0;
+  background-image: url("../assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.story-title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.story-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+.story-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.story-card h3,
+p {
+  padding: 15px;
+}
+.card-img {
+  border-radius: 16px 16px 0 0;
+}
+#story-card1 {
+  grid-row: span 2;
+}
+.story-viewall-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.story-viewall-btn button {
   padding: 10px 50px;
   background-color: #000000;
   color: #fff;
@@ -234,46 +274,44 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
+.card-img{
+  width: 100%;
+}
 
 /* Footer section */
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    margin: 50px 0;
+  margin: 50px 0;
 }
-.site-info img{
-    height: 100px;
-    width: 100px;
+.site-info img {
+  height: 100px;
+  width: 100px;
 }
-.site-info p{
-
+.site-info p {
 }
-.footer-menu{
-    display: flex;
+.footer-menu {
+  display: flex;
+  flex-direction: column;
 }
-.social-icon{
-    display: flex;
+.social-icon {
+  display: flex;
 }
-.footer-menu li{
+.footer-menu li {
   list-style: none;
 }
-.footer-menu li a{
+.footer-menu li a {
   text-decoration: none;
-  color: #0000000;
+  color: black;
 }
-
-
+.icon-title{
+  display: ;
+}
+.soicial-icon-images{
+  display: flex;
+}
 
 /* Media query */
 @media screen and (max-width: 576px) {
@@ -309,9 +347,35 @@ body {
   }
 
   /* Curriculum Section */
-  .curriculum-container{
+  .curriculum-container {
     flex-direction: column;
     gap: 15px;
   }
-
+  .curriculum-card{
+    padding: 40px;
+    margin: 0 15px;
+  }
+  .curriculum-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+  /* story section */
+  #story-card1{
+    display: none;
+  }
+  .story-card-container{
+    margin: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  /* Footer section */
+  .footer-container {
+    flex-direction: column;
+    align-items: start;
+  
+    margin: 50px 0;
+  }
 }
