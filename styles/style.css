@@ -469,11 +469,15 @@ footer{
   .date-box{
     top: 113px;
     left: 20px;
+    height: 35px;
+    width: 170px;
   }
   .story-section{
     padding: 25px 0;
   }
-  
+  .story-card-title{
+    font-size: 0.8rem;
+  }
   /* Footer section */
   .footer-container{
     flex-direction: column;
