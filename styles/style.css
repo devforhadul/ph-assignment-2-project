@@ -14,7 +14,6 @@
 
 
 main{
-  /* background: linear-gradient(0deg, #FEA301, #FFFFFF 50%); */
   background: linear-gradient(0deg, rgba(254, 163, 1, 0.2), rgba(255, 255, 255, 0.0) 50%);;
 }
 body{
@@ -84,8 +83,6 @@ body{
   display: flex;
   align-items: center;
   gap: 50px;
-  padding-bottom: 20px;
-
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -180,7 +177,8 @@ body{
   background-size: cover;
 
   max-width: 1200px;
-  margin: 70px auto;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 .curriculum-container {
   display: flex;
@@ -238,6 +236,9 @@ body{
   margin-right: 10px;
   font-size: 1.2rem;
 }
+.arrow-btn button:hover{
+  background-color: #FFD65A;
+}
 
 /* story section */
 .story-section {
@@ -248,7 +249,7 @@ body{
 
   max-width: 1200px;
   margin: 0px auto;
-  padding: 70px 0;
+  padding: 40px 0;
 
 }
 .story-title {
@@ -259,11 +260,11 @@ body{
 .story-card-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 25px;
+  gap: 20px;
 }
 .story-card {
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .card-img {
@@ -341,41 +342,11 @@ body{
 }
 
 
-/* Footer section */
-/* .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 50px 0;
-} */
-/* .site-info img {
-  height: 100px;
-  width: 100px;
-}
-.site-info p {
-}
-.footer-menu {
-  display: flex;
-  flex-direction: column;
-}
-.social-icon {
-  display: flex;
-}
-
-.icon-title{
-
-}
-.soicial-icon-images{
-  display: flex;
-} */
-
-
 
 /* footer section */
 .footer-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -448,6 +419,9 @@ footer{
     display: block;
     color: #fea301;
   }
+  .navbar{
+    padding: 10px 0;
+  }
   
   /* banner respo */
   .banner {
@@ -459,7 +433,9 @@ footer{
   .banner-title {
     font-size: 3.1rem;
   }
-
+  .banner-content{
+    margin: 0 px;
+  }
   /* Curriculum Section */
   .curriculum-container {
     flex-direction: column;
@@ -473,7 +449,13 @@ footer{
     font-size: 1.5rem;
     font-weight: 700;
     margin: 15px 0;
-}
+  }
+  .curriculum-section{
+    padding: 25px 0;
+  }
+  .arrow-btn{
+    display: none;
+  }
   /* story section */
   #story-card1{
     display: none;
@@ -486,6 +468,10 @@ footer{
   }
   .date-box{
     top: 113px;
+    left: 20px;
+  }
+  .story-section{
+    padding: 25px 0;
   }
   
   /* Footer section */
@@ -496,5 +482,13 @@ footer{
     gap: 20px;
     margin: 0 15px;
   }
+
+  .marque-text h3{
+    font-size: 1.5rem;
+  }
+  .marque-text{
+    margin: 20px;
+  }
+
 
 }
