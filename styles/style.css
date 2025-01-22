@@ -228,6 +228,15 @@ body{
   font-family: "Quicksand", serif;
   font-weight: 700;
 }
+.readmore-btn-1{
+  color: #64C8FF;
+}
+.readmore-btn-2{
+  color: #F0AA00;
+}
+.readmore-btn-3{
+  color: #8700FF;
+}
 .arrow-btn{
   text-align: center;
   margin-top: 50px;
@@ -473,7 +482,7 @@ footer{
     gap: 15px;
   }
   .date-box{
-    top: 93px;
+    top: 110px;
     left: 35px;
     height: 30px;
     width: 120px;
