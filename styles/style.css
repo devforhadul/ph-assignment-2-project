@@ -88,6 +88,9 @@ body{
 }
 .banner-content {
 }
+.flex-size{
+  flex: 1;
+}
 .banner-image {
 }
 .banner-title {
@@ -112,7 +115,10 @@ body{
 .banner-lst-title {
   color: #01acfd;
 }
-
+.banner-image img {
+  width: 100%;
+  width: 100%;
+}
 /* Marque text-style */
 .marque-text {
   height: 50px;
@@ -467,10 +473,14 @@ footer{
     gap: 15px;
   }
   .date-box{
-    top: 113px;
-    left: 20px;
-    height: 35px;
-    width: 170px;
+    top: 93px;
+    left: 35px;
+    height: 30px;
+    width: 120px;
+  }
+  .date-box .date{
+    font-weight: 400;
+    font-size: 9px;
   }
   .story-section{
     padding: 25px 0;
